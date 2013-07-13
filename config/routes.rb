@@ -1,4 +1,14 @@
 Dropboxapp::Application.routes.draw do
+  get "my_dropbox/my_pages"
+
+  get "my_dropbox/edit_page"
+
+  get "my_dropbox/homepage"
+
+  get "view_dropbox/view_page"
+
+  devise_for :db_users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +58,7 @@ Dropboxapp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'my_dropbox#homepage'
 
   # See how all your routes lay out with "rake routes"
 
