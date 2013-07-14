@@ -1,4 +1,16 @@
 Dropboxapp::Application.routes.draw do
+  get "resources/create"
+
+  get "resources/show"
+
+  get "resources/update"
+
+  get "resources/destroy"
+
+  get "test/uploading_files"
+
+  post "test/uploading_files" => 'test#uploading_files_post'
+
   get "my_dropbox/my_pages"
 
   get "my_dropbox/edit_page"
@@ -8,6 +20,8 @@ Dropboxapp::Application.routes.draw do
   get "view_dropbox/view_page"
 
   devise_for :db_users
+
+  resources :resources, only: [:create, :show, :update, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

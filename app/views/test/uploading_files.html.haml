@@ -1,0 +1,17 @@
+%h2 Resources
+- @resources.each do |resource|
+	= resource.title
+	%br
+
+%h2 Upload new resources
+= form_for @new_resource do |f|
+	= f.label "Title"
+	= f.text_field :title
+	%br
+
+	= f.label "Description"
+	= f.text_field :description
+	%br
+
+	= f.submit
+
