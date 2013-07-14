@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-fileupload-rails'
 gem 'devise'
 gem 'haml'
 gem 'html2haml'
