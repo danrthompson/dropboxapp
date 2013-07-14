@@ -1,16 +1,22 @@
 %h2 Resources
 - @resources.each do |resource|
 	= resource.title
+	- if resource.resource_file.exists? then
+		= link_to "Resource file", resource.resource_file.url
 	%br
 
 %h2 Upload new resources
-= form_for @new_resource do |f|
+= form_for @new_resource, html: {multipart: true} do |f|
 	= f.label "Title"
 	= f.text_field :title
 	%br
 
 	= f.label "Description"
 	= f.text_field :description
+	%br
+
+	= f.label "Upload file"
+	= f.file_field :resource_file
 	%br
 
 	= f.submit

@@ -37,5 +37,8 @@ Dropboxapp::Application.configure do
 
   # devise settings
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # paperclip settings
+  Paperclip.options[:command_path] = "/usr/local/bin/"
   
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130713165523) do
+ActiveRecord::Schema.define(:version => 20130714023229) do
 
   create_table "db_users", :force => true do |t|
     t.datetime "created_at",                             :null => false
@@ -43,8 +43,12 @@ ActiveRecord::Schema.define(:version => 20130713165523) do
     t.text     "title"
     t.text     "description"
     t.integer  "page_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.string   "resource_file_file_name"
+    t.string   "resource_file_content_type"
+    t.integer  "resource_file_file_size"
+    t.datetime "resource_file_updated_at"
   end
 
 end

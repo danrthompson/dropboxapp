@@ -28,6 +28,7 @@ gem 'devise'
 gem 'haml'
 gem 'html2haml'
 gem 'haml-rails'
+gem 'paperclip'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
