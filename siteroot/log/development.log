@@ -1,0 +1,2797 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-13 10:04:03 -0600
+Served asset /rails.png - 200 OK (5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDbUsers (20130713162008)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "db_users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130713162008')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToDbUsers (20130713162029)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.5ms)[0m  [1mALTER TABLE "db_users" ADD COLUMN "email" character varying(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (3.4ms)[0m  ALTER TABLE "db_users" ADD COLUMN "encrypted_password" character varying(255) DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "db_users" ADD COLUMN "reset_password_token" character varying(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "db_users" ADD COLUMN "reset_password_sent_at" timestamp
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "db_users" ADD COLUMN "remember_created_at" timestamp[0m
+  [1m[35m (2.5ms)[0m  ALTER TABLE "db_users" ADD COLUMN "sign_in_count" integer DEFAULT 0
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "db_users" ADD COLUMN "current_sign_in_at" timestamp[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "db_users" ADD COLUMN "last_sign_in_at" timestamp
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "db_users" ADD COLUMN "current_sign_in_ip" character varying(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "db_users" ADD COLUMN "last_sign_in_ip" character varying(255)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "index_db_users_on_email" ON "db_users" ("email")[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_db_users_on_reset_password_token" ON "db_users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130713162029')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/view_dropbox/view_page" for 127.0.0.1 at 2013-07-13 10:38:04 -0600
+Processing by ViewDropboxController#view_page as HTML
+  Rendered view_dropbox/view_page.html.erb within layouts/application (2.0ms)
+Compiled my_dropbox.css  (7ms)  (pid 30291)
+Compiled view_dropbox.css  (1ms)  (pid 30291)
+Compiled application.css  (21ms)  (pid 30291)
+Compiled jquery.js  (24ms)  (pid 30291)
+Compiled jquery_ujs.js  (0ms)  (pid 30291)
+Compiled my_dropbox.js  (188ms)  (pid 30291)
+Compiled view_dropbox.js  (121ms)  (pid 30291)
+Compiled application.js  (395ms)  (pid 30291)
+Completed 200 OK in 519ms (Views: 518.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /view_dropbox.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /my_dropbox.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /my_dropbox.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /view_dropbox.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:38:05 -0600
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:38:08 -0600
+Processing by MyDropboxController#edit_page as HTML
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/view_dropbox/view_page" for 127.0.0.1 at 2013-07-13 10:39:17 -0600
+Processing by ViewDropboxController#view_page as HTML
+  Rendered view_dropbox/view_page.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:39:18 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:39:18 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:39:18 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:39:18 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Processing by MyDropboxController#edit_page as HTML
+Completed 401 Unauthorized in 7ms
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 61ms (Views: 18.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:39:19 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Processing by MyDropboxController#edit_page as HTML
+Completed 401 Unauthorized in 7ms
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 115ms (Views: 50.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Served asset /my_dropbox.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:12 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started POST "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:40:18 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vs3bTEETErCMH/Qv6+nxGvKPLQBAoCbjWc4UHKgngN0=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mDbUser Load (0.8ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1[0m
+Completed 401 Unauthorized in 9ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vs3bTEETErCMH/Qv6+nxGvKPLQBAoCbjWc4UHKgngN0=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:19 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:19 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:19 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:19 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/db_users/sign_up" for 127.0.0.1 at 2013-07-13 10:40:26 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:26 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:26 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:26 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:26 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started POST "/db_users" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vs3bTEETErCMH/Qv6+nxGvKPLQBAoCbjWc4UHKgngN0=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mDbUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "db_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"  [["created_at", Sat, 13 Jul 2013 16:40:35 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@test.test"], ["encrypted_password", "$2a$10$Fi8w9seYpqWgLyoDvETMhOjSSx/w.cCfOCTCLoW4gdSJT8LxB01LW"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 13 Jul 2013 16:40:35 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "db_users" SET "last_sign_in_at" = '2013-07-13 16:40:35.749143', "current_sign_in_at" = '2013-07-13 16:40:35.749143', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-07-13 16:40:35.749712' WHERE "db_users"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 88ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:40:35 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/db_users/logout" for 127.0.0.1 at 2013-07-13 10:40:44 -0600
+
+ActionController::RoutingError (No route matches [GET] "/db_users/logout"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/db_users/signout" for 127.0.0.1 at 2013-07-13 10:40:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/db_users/signout"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-13 10:40:52 -0600
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 10:41:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/db_users/sign_out"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:30 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started DELETE "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 10:52:32 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vs3bTEETErCMH/Qv6+nxGvKPLQBAoCbjWc4UHKgngN0="}
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:52:33 -0600
+Processing by MyDropboxController#edit_page as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:52:33 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:34 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3SeULXLTh5BDfBTI0n+fqVxpFoNrDVP7hgdVPhORSM=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mDbUser Load (0.4ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE "db_users" SET "current_sign_in_at" = '2013-07-13 16:52:40.125834', "sign_in_count" = 2, "updated_at" = '2013-07-13 16:52:40.126482' WHERE "db_users"."id" = 1
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 66ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:40 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 10:52:41 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x3SeULXLTh5BDfBTI0n+fqVxpFoNrDVP7hgdVPhORSM="}
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Processing by MyDropboxController#edit_page as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:43 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/db_users/sign_up" for 127.0.0.1 at 2013-07-13 10:52:48 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:49 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/db_users" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GqpTBVKJQJN1DfkF6CgOKGcSOdxpSUAC8TVf+qUtwiY=", "db_user"=>{"email"=>"test1@test.test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mDbUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "db_users" WHERE "db_users"."email" = 'test1@test.test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 79ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 10:52:56 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDbUsers (20130713162008)
+Migrating to AddDeviseToDbUsers (20130713162029)
+Migrating to CreatePages (20130713165517)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (33.2ms)[0m  [1mCREATE TABLE "pages" ("id" serial primary key, "title" text, "description" text, "db_user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130713165517')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateResources (20130713165523)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "resources" ("id" serial primary key, "title" text, "description" text, "page_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130713165523')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDbUsers (20130713162008)
+Migrating to AddDeviseToDbUsers (20130713162029)
+Migrating to CreatePages (20130713165517)
+Migrating to CreateResources (20130713165523)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:11:16 -0600
+Processing by MyDropboxController#homepage as HTML
+Completed 500 Internal Server Error in 34ms
+
+ActionView::MissingTemplate (Missing template my_dropbox/homepage, application/homepage with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/atlantis/Dropbox/Code/D2/dropboxapp/app/views"
+  * "/Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/devise-2.2.3/app/views"
+):
+  actionpack (3.2.13) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.13) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__1845062209219780744__process_action__4590185196080958312__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4095858766963808129__call__2633485284201764352__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:17 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/index_old.html
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 11:18:21 -0600
+Processing by MyDropboxController#edit_page as HTML
+Completed 401 Unauthorized in 6ms
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 11:18:21 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 74ms (Views: 44.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /my_dropbox.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:22 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GqpTBVKJQJN1DfkF6CgOKGcSOdxpSUAC8TVf+qUtwiY=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mDbUser Load (0.7ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "db_users" SET "last_sign_in_at" = '2013-07-13 16:52:40.125834', "current_sign_in_at" = '2013-07-13 17:18:25.216813', "sign_in_count" = 3, "updated_at" = '2013-07-13 17:18:25.219453' WHERE "db_users"."id" = 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 96ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:25 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:29 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+Redirected to 
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `edit_page_url' for #<MyDropboxController:0x007ff5daf896e8>):
+  app/controllers/my_dropbox_controller.rb:13:in `homepage'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:44 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.2ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 54ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 11:18:44 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.4ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:45 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:18:51 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 11:18:53 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GqpTBVKJQJN1DfkF6CgOKGcSOdxpSUAC8TVf+qUtwiY="}
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:53 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/index_old.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:18:55 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/index_old.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/index_old.html" for 127.0.0.1 at 2013-07-13 11:19:24 -0600
+
+ActionController::RoutingError (No route matches [GET] "/index_old.html"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:19:27 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 14.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:13 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/db_users/sign_up" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 11:20:31 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:20:47 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 11:20:47 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 18:55:00 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.haml (2.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 179ms (Views: 97.5ms | ActiveRecord: 53.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:00 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5hWG7+8iCp2FEIrEFpc00kF+yUzYhcL+SSCh/09WfLo=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mDbUser Load (3.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (3.8ms)[0m  [1mUPDATE "db_users" SET "last_sign_in_at" = '2013-07-13 17:18:25.216813', "current_sign_in_at" = '2013-07-14 01:28:06.192702', "sign_in_count" = 4, "updated_at" = '2013-07-14 01:28:06.197273' WHERE "db_users"."id" = 1[0m
+  [1m[35m (171.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 292ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.5ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.4ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:06 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 19:28:08 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5hWG7+8iCp2FEIrEFpc00kF+yUzYhcL+SSCh/09WfLo="}
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:28:08 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/db_users/sign_up" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.haml (0.5ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:10 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/db_users" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OV6G/iwPmhfKlsMhfSR3djSRyA0jQXY84+b/okFofR4=", "db_user"=>{"email"=>"test2@test.test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mDbUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "db_users" WHERE "db_users"."email" = 'test2@test.test' LIMIT 1[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "db_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"  [["created_at", Sun, 14 Jul 2013 01:28:17 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test2@test.test"], ["encrypted_password", "$2a$10$Y58.aH3jpPZispbl56WL9eQzPI.iWux/338MF2u2/2uS6iru0HamO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sun, 14 Jul 2013 01:28:17 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mUPDATE "db_users" SET "last_sign_in_at" = '2013-07-14 01:28:17.433030', "current_sign_in_at" = '2013-07-14 01:28:17.433030', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-07-14 01:28:17.433438' WHERE "db_users"."id" = 2[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 2 LIMIT 1
+  Rendered my_dropbox/edit_page.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:28:17 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/db_users/sign_out" for 127.0.0.1 at 2013-07-13 19:28:18 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OV6G/iwPmhfKlsMhfSR3djSRyA0jQXY84+b/okFofR4="}
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:28:18 -0600
+Processing by MyDropboxController#homepage as HTML
+Redirected to http://localhost:3000/homepage.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:12 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/db_users/sign_in" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "db_user"=>{"email"=>"test@test.test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mDbUser Load (0.5ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."email" = 'test@test.test' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "db_users" SET "last_sign_in_at" = '2013-07-14 01:28:06.192702', "current_sign_in_at" = '2013-07-14 01:29:15.464331', "sign_in_count" = 5, "updated_at" = '2013-07-14 01:29:15.465133' WHERE "db_users"."id" = 1
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[35mDbUser Load (0.4ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[36mDbUser Load (0.3ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+  Rendered my_dropbox/edit_page.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:29:15 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.4ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 64ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.4ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 67ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 19:57:43 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:02:10 -0600
+
+AbstractController::ActionNotFound (The action 'test' could not be found for TestController):
+  actionpack (3.2.13) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4446333085959411276__call__1998411142890556578__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:06:33 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.6ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `all' for #<Array:0x007fe7caa307c8>):
+    1: %h1 Test#uploading_files
+    2: %p Find me in app/views/test/uploading_files.html.erb
+    3: 
+    4: = @resources.all.each do |resource|
+    5: 	= resource.title
+  app/views/test/uploading_files.html.haml:4:in `_app_views_test_uploading_files_html_haml___645276693017508579_70316757664200'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:07:31 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.3ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (1.2ms)
+Compiled test.css  (25ms)  (pid 54056)
+Compiled application.css  (33ms)  (pid 54056)
+Compiled test.js  (77ms)  (pid 54056)
+Compiled application.js  (86ms)  (pid 54056)
+Completed 200 OK in 247ms (Views: 246.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /test.css - 200 OK (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /test.js - 200 OK (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:32 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:07:44 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:07:45 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:08:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDbUsers (20130713162008)
+Migrating to AddDeviseToDbUsers (20130713162029)
+Migrating to CreatePages (20130713165517)
+Migrating to CreateResources (20130713165523)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-13 20:24:31 -0600
+Processing by MyDropboxController#homepage as HTML
+  [1m[36mDbUser Load (0.4ms)[0m  [1mSELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/my_dropbox/edit_page
+Completed 302 Found in 65ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/my_dropbox/edit_page" for 127.0.0.1 at 2013-07-13 20:24:31 -0600
+Processing by MyDropboxController#edit_page as HTML
+  [1m[35mDbUser Load (0.3ms)[0m  SELECT "db_users".* FROM "db_users" WHERE "db_users"."id" = 1 LIMIT 1
+  Rendered my_dropbox/edit_page.html.haml within layouts/application (4.8ms)
+Compiled resources.css  (7ms)  (pid 56326)
+Compiled application.css  (41ms)  (pid 56326)
+Compiled resources.js  (59ms)  (pid 56326)
+Compiled application.js  (78ms)  (pid 56326)
+Completed 200 OK in 276ms (Views: 268.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /test.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /resources.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /view_dropbox.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /resources.js - 200 OK (1ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /test.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:32 -0600
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:24:37 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 112ms (Views: 97.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:24:38 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 20:24:48 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"goob", "description"=>"ly"}, "commit"=>"Create Resource"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"goob", "description"=>"ly"}, "commit"=>"Create Resource"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "resources" ("created_at", "description", "page_id", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 14 Jul 2013 02:26:02 UTC +00:00], ["description", "ly"], ["page_id", nil], ["title", "goob"], ["updated_at", Sun, 14 Jul 2013 02:26:02 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/test/uploading_files
+Completed 302 Found in 21ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:02 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"lob", "description"=>"yist"}, "commit"=>"Create Resource"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "resources" ("created_at", "description", "page_id", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 14 Jul 2013 02:26:09 UTC +00:00], ["description", "yist"], ["page_id", nil], ["title", "lob"], ["updated_at", Sun, 14 Jul 2013 02:26:09 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/test/uploading_files
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.3ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:24 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:26:42 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:36:02 -0600
+Processing by TestController#uploading_files as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa244d59510>):
+  app/models/resource.rb:6:in `<class:Resource>'
+  app/models/resource.rb:1:in `<top (required)>'
+  app/controllers/test_controller.rb:3:in `uploading_files'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 113ms (Views: 80.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /resources.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /test.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /resources.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /test.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:17 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.3ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:36:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 20:36:45 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"goobist", "description"=>"gooboid", "resource_file"=>#<ActionDispatch::Http::UploadedFile:0x007fcf2732b3a8 @original_filename="7-12_7_09_db_dump.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"resource[resource_file]\"; filename=\"7-12_7_09_db_dump.sql\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9m/8ghsbn_17t13zkkr9ww9nf980000gn/T/RackMultipart20130713-57568-jfucf9>>}, "commit"=>"Create Resource"}
+Completed 500 Internal Server Error in 1ms
+
+Paperclip::Error (Resource model missing required attr_accessor for 'resource_file_file_name'):
+  app/controllers/resources_controller.rb:3:in `create'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDbUsers (20130713162008)
+Migrating to AddDeviseToDbUsers (20130713162029)
+Migrating to CreatePages (20130713165517)
+Migrating to CreateResources (20130713165523)
+Migrating to AddAttachmentResourceFileToResources (20130714023229)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.1ms)[0m  [1mALTER TABLE "resources" ADD COLUMN "resource_file_file_name" character varying(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "resources" ADD COLUMN "resource_file_content_type" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "resources" ADD COLUMN "resource_file_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "resources" ADD COLUMN "resource_file_updated_at" timestamp
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130714023229')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"goobist", "description"=>"gooboid", "resource_file"=>#<ActionDispatch::Http::UploadedFile:0x007fc097f80ed0 @original_filename="7-12_7_09_db_dump.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"resource[resource_file]\"; filename=\"7-12_7_09_db_dump.sql\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9m/8ghsbn_17t13zkkr9ww9nf980000gn/T/RackMultipart20130713-57692-18xgs33>>}, "commit"=>"Create Resource"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "resources" ("created_at", "description", "page_id", "resource_file_content_type", "resource_file_file_name", "resource_file_file_size", "resource_file_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 14 Jul 2013 02:37:41 UTC +00:00], ["description", "gooboid"], ["page_id", nil], ["resource_file_content_type", "application/octet-stream"], ["resource_file_file_name", "7-12_7_09_db_dump.sql"], ["resource_file_file_size", 456353], ["resource_file_updated_at", Sun, 14 Jul 2013 02:37:41 UTC +00:00], ["title", "goobist"], ["updated_at", Sun, 14 Jul 2013 02:37:41 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/test/uploading_files
+Completed 302 Found in 66ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.4ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /resources.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /test.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /resources.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /test.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:37:41 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:39:15 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/resource_files/original/missing.png" for 127.0.0.1 at 2013-07-13 20:39:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resource_files/original/missing.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[35mResource Load (0.4ms)[0m  SELECT "resources".* FROM "resources" 
+  Rendered test/uploading_files.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:40:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/resource_files/original/missing.png" for 127.0.0.1 at 2013-07-13 20:41:24 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resource_files/original/missing.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/atlantis/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/atlantis/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 20:43:38 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+  Rendered test/uploading_files.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 20:43:39 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 21:14:05 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.4ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+[AWS S3 404 0.759633 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/005/original/7-12_7_09_db_dump.sql") AWS::S3::Errors::NoSuchKey No Such Key
+
+  Rendered test/uploading_files.html.haml within layouts/application (1009.7ms)
+Completed 200 OK in 1134ms (Views: 1071.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /my_dropbox.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /resources.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /test.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /resources.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /test.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:06 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 21:14:25 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"s3!", "description"=>"bitchez", "resource_file"=>#<ActionDispatch::Http::UploadedFile:0x007fdd99874a28 @original_filename="1045210_265601600245261_1878338726_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"resource[resource_file]\"; filename=\"1045210_265601600245261_1878338726_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/9m/8ghsbn_17t13zkkr9ww9nf980000gn/T/RackMultipart20130713-77550-16yk82>>}, "commit"=>"Create Resource"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (32.2ms)[0m  [1mINSERT INTO "resources" ("created_at", "description", "page_id", "resource_file_content_type", "resource_file_file_name", "resource_file_file_size", "resource_file_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 14 Jul 2013 03:14:25 UTC +00:00], ["description", "bitchez"], ["page_id", nil], ["resource_file_content_type", "image/jpeg"], ["resource_file_file_name", "1045210_265601600245261_1878338726_n.jpg"], ["resource_file_file_size", 78526], ["resource_file_updated_at", Sun, 14 Jul 2013 03:14:25 UTC +00:00], ["title", "s3!"], ["updated_at", Sun, 14 Jul 2013 03:14:25 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving /resources/resource_files/000/000/006/original/1045210_265601600245261_1878338726_n.jpg
+[AWS S3 200 0.634575 0 retries] put_object(:acl=>"public-read",:bucket_name=>"dropboxapp_dandd",:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: 1045210_265601600245261_1878338726_n.jpg,:key=>"resources/resource_files/000/000/006/original/1045210_265601600245261_1878338726_n.jpg")  
+
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/test/uploading_files
+Completed 302 Found in 674ms (ActiveRecord: 33.1ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 21:14:25 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+[AWS S3 404 0.094634 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/005/original/7-12_7_09_db_dump.sql") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.098584 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/006/original/1045210_265601600245261_1878338726_n.jpg")  
+
+  Rendered test/uploading_files.html.haml within layouts/application (198.3ms)
+Completed 200 OK in 228ms (Views: 226.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /my_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /resources.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /view_dropbox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 21:14:26 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 21:15:50 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.4ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+[AWS S3 404 0.359345 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/005/original/7-12_7_09_db_dump.sql") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.099804 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/006/original/1045210_265601600245261_1878338726_n.jpg")  
+
+  Rendered test/uploading_files.html.haml within layouts/application (704.4ms)
+Completed 200 OK in 828ms (Views: 757.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:51 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:51 -0600
+Served asset /my_dropbox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:51 -0600
+Served asset /resources.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:51 -0600
+Served asset /test.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:51 -0600
+Served asset /view_dropbox.css - 304 Not Modified (1ms)
+
+
+Started POST "/resources" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Processing by ResourcesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPMA+JJdBdA0dgotrMFaULI0QTxN3Iqz9et5e/TlZbM=", "resource"=>{"title"=>"sdf", "description"=>"sdf"}, "commit"=>"Create Resource"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "resources" ("created_at", "description", "page_id", "resource_file_content_type", "resource_file_file_name", "resource_file_file_size", "resource_file_updated_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 14 Jul 2013 03:15:55 UTC +00:00], ["description", "sdf"], ["page_id", nil], ["resource_file_content_type", nil], ["resource_file_file_name", nil], ["resource_file_file_size", nil], ["resource_file_updated_at", nil], ["title", "sdf"], ["updated_at", Sun, 14 Jul 2013 03:15:55 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/test/uploading_files
+Completed 302 Found in 10ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/test/uploading_files" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Processing by TestController#uploading_files as HTML
+  [1m[36mResource Load (0.4ms)[0m  [1mSELECT "resources".* FROM "resources" [0m
+[AWS S3 404 0.318274 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/005/original/7-12_7_09_db_dump.sql") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.097071 0 retries] head_object(:bucket_name=>"dropboxapp_dandd",:key=>"resources/resource_files/000/000/006/original/1045210_265601600245261_1878338726_n.jpg")  
+
+  Rendered test/uploading_files.html.haml within layouts/application (421.3ms)
+Completed 200 OK in 449ms (Views: 448.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /my_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/view_dropbox.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /view_dropbox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resources.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /resources.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.css?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /test.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /my_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/resources.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /resources.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /test.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/view_dropbox.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /view_dropbox.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-13 21:15:55 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
