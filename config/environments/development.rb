@@ -40,5 +40,12 @@ Dropboxapp::Application.configure do
 
   # paperclip settings
   Paperclip.options[:command_path] = "/usr/local/bin/"
-  
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => 'dropboxapp_dandd',
+      :access_key_id => 'AKIAIFSI7TDOV6235DPQ',
+      :secret_access_key => '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'
+    }
+  }
 end
