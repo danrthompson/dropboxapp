@@ -8,6 +8,6 @@ class TestController < ApplicationController
   end
 
   def sample_display_page
-  	@page = Page.find_by_title("Sample Page")
+  	@page = Page.find_by_id(1)
   end
 end
