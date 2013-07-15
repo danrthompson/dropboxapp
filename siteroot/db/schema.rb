@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715030235) do
+ActiveRecord::Schema.define(:version => 20130715035812) do
 
   create_table "db_users", :force => true do |t|
     t.datetime "created_at",                             :null => false
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(:version => 20130715030235) do
 
   add_index "db_users", ["email"], :name => "index_db_users_on_email", :unique => true
   add_index "db_users", ["reset_password_token"], :name => "index_db_users_on_reset_password_token", :unique => true
+
+  create_table "folders", :force => true do |t|
+    t.integer  "depth"
+    t.text     "label"
+    t.integer  "order"
+    t.integer  "page_id"
+    t.integer  "parent_folder_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "pages", :force => true do |t|
     t.text     "title"
@@ -51,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20130715030235) do
     t.string   "resource_file_content_type"
     t.integer  "resource_file_file_size"
     t.datetime "resource_file_updated_at"
+    t.integer  "folder_id"
   end
 
 end

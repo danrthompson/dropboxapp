@@ -1,7 +1,8 @@
 class Resource < ActiveRecord::Base
-  attr_accessible :description, :title, :resource_file
+  attr_accessible :description, :title, :resource_file, :page_id, :folder_id
 
   belongs_to :page
+  belongs_to :folder
 
   has_attached_file :resource_file
 
