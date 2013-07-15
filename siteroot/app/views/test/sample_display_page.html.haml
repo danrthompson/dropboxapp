@@ -2,7 +2,26 @@
 
 / This is the opening image
 .main-img
-	%img{:src => "/images/sample-large.jpg", :alt => ""}/ 
+	.container
+		.top-nav
+			.top-left-nav
+				%a.btn{:href => "www.google.com"} Admin Login
+			.top-right-nav
+				%a.btn{:href => "www.google.com"} About
+				%a.btn{:href => "www.google.com"} Contact
+
+		.main-headline
+			%h1= @page.title
+			%br/
+			%p= @page.description
+
+.main-content
+	.container
+		.main-description
+			%h1= @page.resources_header
+			%p= @page.resources_description
+
+
 
 
 %p Welcome to soapbox!

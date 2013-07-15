@@ -1,0 +1,66 @@
+/*Stylesheet For All Site*/
+
+.main-img {
+	width: 100%;
+	background: url(/images/sample-large.jpg);
+	height:600px;
+	background-size: cover;
+	overflow: hidden;
+	border-bottom: 1px solid #484848;
+}
+
+.top-nav{
+	margin-top: 20px;
+}
+
+.top-nav a{
+	opacity: .4;
+}
+
+.top-nav a:hover{
+	opacity:1;
+}
+
+.top-left-nav {
+	float:left;
+}
+
+.top-right-nav{
+	float:right;
+}
+
+.top-right-nav a{
+	margin-right: 10px;
+}
+
+.main-headline{
+	margin:0 auto;
+	text-align: center;
+	color: white;
+	margin-top:200px;
+	font-family: 'Raleway', sans-serif;
+	width: 75%;
+	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+		/*background-color:rgba(0,0,0,0.5);*/
+	padding: 30px 30px;
+	border-radius: 10px;
+
+}
+
+.main-headline h1{
+	text-transform: uppercase;
+	font-size: 60px;
+	width: 95%;
+	margin:auto;
+
+}
+
+.main-headline p {
+	text-align: justify;
+	font-size: 20px;
+	font-weight:100;
+	line-height: 28px;
+
+}
+
+
