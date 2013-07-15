@@ -24,6 +24,7 @@ Dropboxapp::Application.routes.draw do
   devise_for :db_users
 
   resources :resources, only: [:create, :show, :update, :destroy]
+  resources :pages, only: [:create, :show, :update, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
