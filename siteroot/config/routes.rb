@@ -9,6 +9,8 @@ Dropboxapp::Application.routes.draw do
 
   get "test/uploading_files"
 
+  get "test/sample_display_page"
+
   post "test/uploading_files" => 'test#uploading_files_post'
 
   get "my_dropbox/my_pages"

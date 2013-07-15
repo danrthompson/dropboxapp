@@ -6,4 +6,8 @@ class TestController < ApplicationController
 
   def uploading_files_post
   end
+
+  def sample_display_page
+  	@page = Page.find_by_title("Sample Page")
+  end
 end
