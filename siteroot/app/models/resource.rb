@@ -4,4 +4,16 @@ class Resource < ActiveRecord::Base
   belongs_to :page
 
   has_attached_file :resource_file
+
+  include Rails.application.routes.url_helpers
+
+  def to_jq_resource_file
+    {
+      "name" => read_attribute(:resource_file_file_name),
+      "size" => read_attribute(:resource_file_file_size),
+      "url" => resource_file.url(:original),
+      "delete_url" => resource_path(self),
+      "delete_type" => "DELETE" 
+    }
+  end
 end
