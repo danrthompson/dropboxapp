@@ -5,4 +5,8 @@ class Page < ActiveRecord::Base
   has_many :folders, dependent: :destroy
 
   belongs_to :db_user
+
+  def root_folders
+  	Folder.where({page_id: self.id, depth: 0})
+  end
 end
