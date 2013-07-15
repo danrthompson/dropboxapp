@@ -1,2 +1,20 @@
-test!
-= @page.title
+
+
+/ This is the opening image
+.main-img
+	%img{:src => "/images/sample-large.jpg", :alt => ""}/ 
+
+
+%p Welcome to soapbox!
+%br
+
+%h1= @page.title
+
+- @page.resources.each do |resource|
+	%img{:src => "https://d3oaxc4q5k2d6q.cloudfront.net/m/9c918ff298bc/img/language-avatars/default_64.png", :alt => ""}/ 
+	.resource_label
+		%h2 Resource:
+	.resources
+		%button.primary-button= resource.title
+		%h3= resource.description
+
