@@ -6,7 +6,7 @@ class CreateFolders < ActiveRecord::Migration
       t.integer :order
 
       t.belongs_to :page
-      t.belongs_to :folder
+      t.belongs_to :parent_folder
 
       t.timestamps
     end

@@ -36,9 +36,9 @@ ActiveRecord::Schema.define(:version => 20130715031043) do
     t.text     "label"
     t.integer  "order"
     t.integer  "page_id"
-    t.integer  "folder_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "parent_folder_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "pages", :force => true do |t|
