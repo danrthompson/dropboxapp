@@ -1,6 +1,8 @@
 
 
 / This is the opening image
+
+	
 .main-img
 	.container
 		.top-nav
@@ -16,25 +18,66 @@
 			%p= @page.description
 
 .main-content
+	%h1#downloads-title VIEW DOWNLOADS
+	.full-bar.gray
+	%br/
 	.container
 		.main-description
 			%h1= @page.resources_header
+			%br/
 			%p= @page.resources_description
 
 
+.main-resources.container
+	.main-resource-bar
+		%a{:href => ""}
+			%h3 Sample Resource Title
+	%br/ 
+	.resource-wrapper
+		%img{:src => "/images/thumbnail.jpg", :alt => ""}/ 
+		.resource-content
+			.resource-title
+				%h5 Sample Resource Title Here
+				%a{:href => "www.google.com"} DOWNLOAD 
+			%p Sample description. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+	
+	.resource-wrapper
+		%img{:src => "/images/thumbnail.jpg", :alt => ""}/ 
+		.resource-content
+			.resource-title
+				%h5 Sample Resource Title Here
+				%a{:href => "www.google.com"} DOWNLOAD 
+			%p Sample description. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+		
 
 
-%p Welcome to soapbox!
-%br
+/ .main-resources.container
+/ 	- @page.root_folders.each do |folder|
+/ 		.main-resource-bar
+/ 		- folder.resources.each do |resource|
+/ 			.resource-wrapper
+/ 				%img{:src => "/images/thumbnail.jpg", :alt => ""}/ 
+/ 				.resource-content
+/ 					.resource-title
+/ 						%h5 resource.title
+/ 						%a{:href => "www.google.com"} DOWNLOAD 
+/ 					%p resource.description
+		
 
-%h1= @page.title
+/ 	For each: @page.root_folders.each do |folder|
 
-- @page.resources.each do |resource|
-	%img{:src => "https://d3oaxc4q5k2d6q.cloudfront.net/m/9c918ff298bc/img/language-avatars/default_64.png", :alt => ""}/ 
-	.resource_label
-		%h2 Resource:
-	.resources
-		%button.primary-button= resource.title
-		%h3= resource.description
+
+/ 	For each: folder.resources.each do |resource|
+/ 		Putem
+/  	For each: folder.children_folders do |child_folder|
+
+
+/ - @page.resources.each do |resource|
+/ 	%img{:src => "https://d3oaxc4q5k2d6q.cloudfront.net/m/9c918ff298bc/img/language-avatars/default_64.png", :alt => ""}/ 
+/ 	.resource_label
+/ 		%h2 Resource:
+/ 	.resources
+/ 		%button.primary-button= resource.title
+/ 		%h3= resource.description
 
 
