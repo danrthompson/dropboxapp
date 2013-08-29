@@ -4,6 +4,9 @@ Soapbox::Application.configure do
   config.action_mailer.default_url_options = { :host => 'OURDOMAIN.COM' }
   # end devise
 
+  # modifications
+  config.serve_static_assets = true
+  # end modifications
 
   # Code is not reloaded between requests
   config.cache_classes = true
@@ -12,8 +15,7 @@ Soapbox::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -50,7 +52,7 @@ Soapbox::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( ie6.css ie7.css )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

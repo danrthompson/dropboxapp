@@ -12,6 +12,9 @@ gem 'devise'
 gem 'haml'
 gem "haml-rails"
 gem 'formtastic'
+gem 'less-rails'
+gem 'therubyracer', :platforms => :ruby
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -24,9 +27,18 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'turbo-sprockets-rails3'
 end
 
 gem 'jquery-rails'
+
+
+
+group :development, :test do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'awesome_print'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

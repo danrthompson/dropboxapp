@@ -4,6 +4,13 @@ Soapbox::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # end devise
 
+  # modifications
+
+  # prevents loading of precompiled assets
+  config.assets.prefix = "/assets_dev"
+
+  # end modifications
+
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
