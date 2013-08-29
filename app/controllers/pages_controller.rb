@@ -2,7 +2,6 @@ class PagesController < ApplicationController
 	before_filter :load_page, only: [:show, :edit, :update, :destroy]
 
 	def new
-
 		@page = Page.new
 	end
 
