@@ -1,0 +1,36 @@
+user
+	has account (as owner)
+	username
+	email
+	name?
+
+account
+	belongs_to user (as owner)
+	has pages
+	account level (controls num pages allowed, space available)
+
+page
+	belongs_to account
+	has files
+	has file_sections
+	url
+	contact available
+	main image
+	title
+	subtitle
+	description
+
+
+files
+	belongs_to page
+	belongs_to file_section (must be one of those two, do polymorphic?)
+	rank
+	title
+	description
+	num_downloads
+
+file_sections
+	belongs_to page
+	has files
+	title
+	rank

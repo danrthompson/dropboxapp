@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true
   validates :username, uniqueness: true
+
+  has_one :account, dependent: :destroy
 end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  account_id: 1
+  url: MyString
+  contact_available: false
+  title: MyString
+  subtitle: MyString
+  description: MyText
+
+two:
+  account_id: 1
+  url: MyString
+  contact_available: false
+  title: MyString
+  subtitle: MyString
+  description: MyText
