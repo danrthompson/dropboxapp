@@ -2,23 +2,31 @@ user
 	has account (as owner)
 	username
 	email
+	administrator
 	name?
 
 account
 	belongs_to user (as owner)
 	has pages
-	account level (controls num pages allowed, space available)
+	subscription_tier (controls num pages allowed, space available)
 
 page
 	belongs_to account
 	has files
 	has file_sections
 	url
-	contact available
+	contact_available
 	main image
 	title
 	subtitle
 	description
+	(public / password protected)
+
+file_sections
+	belongs_to page
+	has files
+	title
+	rank
 
 
 files
@@ -28,9 +36,3 @@ files
 	title
 	description
 	num_downloads
-
-file_sections
-	belongs_to page
-	has files
-	title
-	rank

@@ -1,0 +1,3 @@
+class FileSectionsController < ApplicationController
+
+end

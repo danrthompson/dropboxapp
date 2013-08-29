@@ -1,6 +1,12 @@
 Soapbox::Application.routes.draw do
   devise_for :users
 
+  resource :account, only: [:show, :edit, :update]
+  
+  resources :pages, only: [:new, :create, :show, :edit, :update, :destroy] do
+    resources :file_sections, only: [:create, :update, :destroy]
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
