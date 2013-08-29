@@ -11,6 +11,7 @@ gem 'pg'
 gem 'devise'
 gem 'haml'
 gem "haml-rails"
+gem 'formtastic'
 
 
 # Gems used only for assets and not required

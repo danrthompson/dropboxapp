@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
 	attr_accessor :user_id
-  attr_accessible :contact_available, :description, :subtitle, :title, :url
+  attr_accessible :contact_available, :description, :subtitle, :title, :url, :account_id
 
   belongs_to :account
   has_many :file_sections, dependent: :destroy
@@ -8,6 +8,10 @@ class Page < ActiveRecord::Base
   validates :account_id, :user_id, :url, presence: true
   validates :url, uniqueness: true
   validate :account_belongs_to_user
+
+  def to_param
+  	self.url
+  end
 
   protected
 

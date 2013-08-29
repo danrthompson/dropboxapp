@@ -1,6 +1,6 @@
 class FileSection < ActiveRecord::Base
 	attr_accessor :user_id
-  attr_accessible :rank, :title
+  attr_accessible :rank, :title, :page_id
 
   belongs_to :page
 
