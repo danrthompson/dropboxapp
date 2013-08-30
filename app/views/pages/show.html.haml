@@ -1,2 +1,40 @@
-%p test
-%p= @page.title
+/ %p test
+/ %p= @page.description
+
+
+.first-section-wrapper
+	%img#main-img{:src => "http://uncrate.com/p/2013/08/neat-ice-kit-xl.jpg", :alt => ""}/ 
+.second-section-wrapper
+	.content-wrapper
+		.nav.main-nav
+			%ul 
+				%li 
+					%a{:href => ""} Contact
+				%li.pipe &#124;
+				%li 
+					%a{:href => ""} Admin Login
+		.page-overview
+			%h1.page-title The Handleband
+			%h2.page-subtitle Press Material
+			.divider
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+.download-section-wrapper
+	.content-wrapper
+		%h2 These Are Downloads
+		.divider
+		.subsections-wrapper
+			.subsection
+				.subsection-header
+					%h3 Subsection Title
+					/ download button
+					%a{:href => ""}
+						%img{:src => "", :alt => ""}/  
+				.resources-wrapper
+					.resource
+						%h4 Resouce Title
+						%p Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						/ download button
+						%a{:href => ""}
+							%img{:src => "", :alt => ""}/   
+		 
+
