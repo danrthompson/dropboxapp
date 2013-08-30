@@ -1,3 +1,18 @@
+-# <<<<<<< HEAD
+-# %p test
+-# %p= @page.title
+
+-# %p Existing file sections
+-# - @page.file_sections.each do |file_section|
+-# 	= render partial: 'file_sections/file_section', locals: {file_section: file_section}
+-# %br
+
+-# %p New file section
+-# = render partial: 'file_sections/form', locals: {page: @page, file_section: FileSection.new}
+
+-# = link_to "Edit Page", edit_page_path(@page)
+-# = link_to "Delete Page", page_path(@page), method: :delete
+-# =======
 / %p test
 / %p= @page.description
 
@@ -11,6 +26,7 @@
 				%li 
 					%a{:href => ""} Contact
 				%li.pipe &#124;
+<<<<<<< HEAD
 				%li 
 					%a{:href => ""} Admin Login
 
@@ -22,11 +38,19 @@
 				%li 
 					%a{:href => ""} Downloads
 	.content-wrapper
+=======
+				- if current_user then				
+					%li 
+						= link_to "Log Out", destroy_user_session_path
+				- else
+					%li 
+						= link_to "Admin Login", new_user_session_path
+>>>>>>> 06ff52db22206e4f429f4296b3b9a6908cc026a8
 		.page-overview
-			%h1.page-title The Handleband
-			%h2.page-subtitle Press Material
+			%h1.page-title= @page.title
+			%h2.page-subtitle= @page.subtitle
 			.divider
-			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+			%p= @page.description
 .download-section-wrapper
 	.content-wrapper
 		%h2 These Are Downloads
@@ -72,5 +96,8 @@
 						%a{:href => ""}
 							%img.download-icon{:src => "", :alt => ""}/ 
 		 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 06ff52db22206e4f429f4296b3b9a6908cc026a8

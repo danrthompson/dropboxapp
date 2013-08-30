@@ -11,8 +11,10 @@ class PagesController < ApplicationController
 	end
 
 	def create
-		@page = current_user.account.pages.create(params[:page])
+		@page = current_user.account.pages.new(params[:page])
+		authorize! :create, @page
 		if @page.valid? then
+			@page.save
 			redirect_to page_path(@page)
 		else
 			render :new
@@ -36,7 +38,7 @@ class PagesController < ApplicationController
 	def destroy
 		authorize! :destroy, @page
 		@page.destroy
-		redirect_to account_path(current_user.account)
+		redirect_to account_path
 	end
 
 	protected
