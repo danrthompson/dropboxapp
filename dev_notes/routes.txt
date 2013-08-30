@@ -1,0 +1,22 @@
+        new_user_session GET    /users/sign_in(.:format)                         devise/sessions#new
+            user_session POST   /users/sign_in(.:format)                         devise/sessions#create
+    destroy_user_session GET    /users/sign_out(.:format)                        devise/sessions#destroy
+cancel_user_registration GET    /users/cancel(.:format)                          devise/registrations#cancel
+       user_registration POST   /users(.:format)                                 devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)                         devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)                            devise/registrations#edit
+                         PUT    /users(.:format)                                 devise/registrations#update
+                         DELETE /users(.:format)                                 devise/registrations#destroy
+            edit_account GET    /account/edit(.:format)                          accounts#edit
+                 account GET    /account(.:format)                               accounts#show
+                         PUT    /account(.:format)                               accounts#update
+      page_file_sections POST   /pages/:page_id/file_sections(.:format)          file_sections#create
+  edit_page_file_section GET    /pages/:page_id/file_sections/:id/edit(.:format) file_sections#edit
+       page_file_section PUT    /pages/:page_id/file_sections/:id(.:format)      file_sections#update
+                         DELETE /pages/:page_id/file_sections/:id(.:format)      file_sections#destroy
+                   pages POST   /pages(.:format)                                 pages#create
+                new_page GET    /pages/new(.:format)                             pages#new
+               edit_page GET    /pages/:id/edit(.:format)                        pages#edit
+                    page GET    /pages/:id(.:format)                             pages#show
+                         PUT    /pages/:id(.:format)                             pages#update
+                         DELETE /pages/:id(.:format)                             pages#destroy
