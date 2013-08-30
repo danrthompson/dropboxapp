@@ -26,9 +26,12 @@
 				%li 
 					%a{:href => ""} Contact
 				%li.pipe &#124;
-<<<<<<< HEAD
-				%li 
-					%a{:href => ""} Admin Login
+				- if current_user then				
+					%li 
+						= link_to "Log Out", destroy_user_session_path
+				- else
+					%li 
+						= link_to "Admin Login", new_user_session_path
 
 		.nav.main-nav.float-left
 			%ul 
@@ -38,14 +41,6 @@
 				%li 
 					%a{:href => ""} Downloads
 	.content-wrapper
-=======
-				- if current_user then				
-					%li 
-						= link_to "Log Out", destroy_user_session_path
-				- else
-					%li 
-						= link_to "Admin Login", new_user_session_path
->>>>>>> 06ff52db22206e4f429f4296b3b9a6908cc026a8
 		.page-overview
 			%h1.page-title= @page.title
 			%h2.page-subtitle= @page.subtitle
@@ -96,8 +91,4 @@
 						%a{:href => ""}
 							%img.download-icon{:src => "", :alt => ""}/ 
 		 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 06ff52db22206e4f429f4296b3b9a6908cc026a8
