@@ -1,6 +1,6 @@
 //font
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,800);
-
+// @import url(http://fonts.googleapis.com/css?family=Raleway:100, 400,200,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,800);
 
 // Colors
 @background-color: #f2f2f2;
@@ -14,6 +14,7 @@
 @teal: #0a7b8d;
 @dark-teal: #086270;
 @button-hover-teal: #1c96a9;
+@light-teal: #26B5D1;
 @hover-teal: #dfeef1;
 @current-teal: #f0f4f5;
 
@@ -119,6 +120,8 @@ h1{
 
 h2{
 	font-size: 30px;
+	font-weight: 200;
+	text-transform: uppercase;
 }
 
 p {
@@ -132,6 +135,11 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+.divider{
+	
+			border-bottom:1px solid @stroke-color;
 }
 
 ////////////////////
@@ -198,25 +206,134 @@ ul {
 		}
 
 		.page-subtitle{
-			font-weight: 200;
-			color: @middle-gray;
-			text-transform: uppercase;
 			margin-bottom: 15px;
+			color: @middle-gray;
+
 		}
 
 		.divider{
 			margin-top: 30px;
 			margin-bottom: 30px;
 			width:200px;
-			border-bottom:1px solid @stroke-color;
 		}
 	}
 
 }
 
 .download-section-wrapper{
-	background-color: @teal;
+	background-color: @light-teal;
 	color: white;
 	text-align: center;
+	padding-top: 30px;
+
+	h2{
+		font-size: 48px;
+		letter-spacing: 2px;
+		margin-bottom: 15px;
+		font-weight: 100;
+	}
+
+	.divider{
+		border-bottom: 1px solid white;
+		width: 800px;
+		margin: auto;
+		opacity: 0.5;
+		margin-bottom: 60px;
+	}
+
+	.subsections-wrapper{
+		width: 750px;
+		margin: auto;
+		.subsection{
+			padding-bottom: 30px;
+			.subsection-header{
+
+				height: 22px;
+				background-color: @dark-teal;
+				padding-top: 5px;
+				margin-bottom: 20px;
+				
+				&:hover{
+					background-color: @teal;
+					cursor: pointer;
+				}
+
+
+				h3{
+					.mp(0);
+					text-transform: uppercase;
+					font-size: 16px;
+					font-weight: 400;
+					margin-left: 20px;
+					float: left;
+				}
+
+				.download-icon{
+					width: 18px;
+					height: 18px;
+					margin-top: 0px;
+					float: right;
+					margin-right: 10px;
+				}
+
+			} // End .subsection-header
+		
+		.resources-wrapper{
+
+
+			.resource{
+				background-color: white;
+				height: 55px;
+				width: 95%;
+				margin-left: 5%;
+				margin-bottom: 20px;
+				text-align: left;
+				padding: 10px 0;
+				
+				&:hover{
+					background-color: @current-teal;
+					cursor: pointer;
+				}
+
+				h4{
+					color: @dark-gray;
+					font-size: 16px;
+					font-weight: 800px;
+					width: 200px;
+					.mp(0);
+					float: left;
+					height: 40px;
+					padding-top: 17px;
+					max-height: 40px;
+					margin-left: 10px;
+					text-align: center;
+				}
+
+				p{
+					font-size: 12px;
+					width: 400px;
+					height: 55px;
+					margin-left: 10px;
+					float: left;
+					overflow: scroll;
+					line-height: 18px;
+					margin-top: 2px;
+				}
+
+
+
+
+
+			}
+
+
+		} // End .resource-wrapper
+
+
+
+		} // end .subsection
+	} // end .subsections-wrapper
 }
+
+
 
