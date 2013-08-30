@@ -1,0 +1,7 @@
+%p File Section
+%p= file_section.title
+%p= file_section.rank
+= link_to "Edit File Section", edit_page_file_section_path(file_section.page, file_section)
+%br
+= link_to "Delete File Section", page_file_section_path(file_section.page, file_section), method: :delete
+%br

@@ -1,2 +1,13 @@
 %p test
 %p= @page.title
+
+%p Existing file sections
+- @page.file_sections.each do |file_section|
+	= render partial: 'file_sections/file_section', locals: {file_section: file_section}
+%br
+
+%p New file section
+= render partial: 'file_sections/form', locals: {page: @page, file_section: FileSection.new}
+
+= link_to "Edit Page", edit_page_path(@page)
+= link_to "Delete Page", page_path(@page), method: :delete
