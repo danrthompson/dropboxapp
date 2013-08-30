@@ -142,8 +142,59 @@ ul {
 			border-bottom:1px solid @stroke-color;
 }
 
-////////////////////
+////////////////////////////////////////
 
+///////////// UNIVERSAL CLASSES ////////
+
+.teal {
+	color: @teal;
+}
+
+.gray{
+	color: @middle-gray;
+}
+.half-opacity{
+	opacity: 0.5;
+}
+
+
+.full-opacity{
+	opacity: 1;
+}
+.right-stroke{
+		border-right: 1px solid @stroke-color;
+}
+
+.dont-show{
+	display: none;
+}
+
+.right-align{
+	text-align: right;
+}
+.left-align{
+	text-align: left;
+}
+
+.center-align{
+	text-align: center;
+}
+
+.float-left {
+	float: left;
+	overflow: hidden;
+}
+
+.float-right {
+	float: right;
+	overflow: hidden;
+}
+
+.all-caps{
+	text-transform: uppercase;
+}
+
+//////////////////////////////
 
 
 .notice, .alert{
@@ -169,10 +220,19 @@ ul {
 	}
 }
 
-.nav{
 
+.nav-wrapper{
+	height: 35px;
+	background-color: white;
+	position: fixed;
+	bottom:30px;
+	width:100%;
+	padding-top: 0;
+}
+
+.nav{
+	margin: 0 50px;
 	&.main-nav{
-		float:right;
 		margin-top: 15px;
 	}
 	ul{

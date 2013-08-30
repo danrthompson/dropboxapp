@@ -5,14 +5,23 @@
 .first-section-wrapper
 	%img#main-img{:src => "http://uncrate.com/p/2013/08/neat-ice-kit-xl.jpg", :alt => ""}/ 
 .second-section-wrapper
-	.content-wrapper
-		.nav.main-nav
+	.nav-wrapper
+		.nav.main-nav.float-right
 			%ul 
 				%li 
 					%a{:href => ""} Contact
 				%li.pipe &#124;
 				%li 
 					%a{:href => ""} Admin Login
+
+		.nav.main-nav.float-left
+			%ul 
+				%li 
+					%a{:href => ""} Overview
+				%li.pipe &#124;
+				%li 
+					%a{:href => ""} Downloads
+	.content-wrapper
 		.page-overview
 			%h1.page-title The Handleband
 			%h2.page-subtitle Press Material
