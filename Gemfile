@@ -15,6 +15,7 @@ gem 'formtastic'
 gem 'less-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'thin'
+gem 'cancan', '1.6.8'
 
 
 # Gems used only for assets and not required
