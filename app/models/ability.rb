@@ -4,8 +4,10 @@ class Ability
 	def initialize(user)
 		if user.is_a? User then
 			if user.administrator then
+				# logged in, is an admin
 				can :manage, :all
 			else
+				# logged in, not an admin
 				can :manage, Page do |page|
 					page.account.user_id == user.id
 				end
@@ -14,6 +16,7 @@ class Ability
 				end
 			end
 		else
+			# not logged in
 
 		end
 		# Define abilities for the passed in user here. For example:

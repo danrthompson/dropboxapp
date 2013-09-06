@@ -16,7 +16,9 @@ gem 'less-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'thin'
 gem 'cancan', '1.6.8'
-
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'figaro'
 
 # Gems used only for assets and not required
 # in production environments by default.

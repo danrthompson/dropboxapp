@@ -12,6 +12,19 @@ end
 module Soapbox
   class Application < Rails::Application
 
+    # paperclip
+    config.paperclip_defaults = {
+      storage: :s3,
+      s3_credentials: {
+        bucket: ENV['AWS_BUCKET'],
+        access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+        secret_access_key: ENV['AWS_SECRET_KEY']
+      },
+      path: ENV['PAPERCLIP_DEFAULT_PATH'],
+      hash_secret: ENV['PAPERCLIP_HASH_SECRET']
+    }
+    # end paperclip
+
     # heroku
     config.assets.initialize_on_precompile = false
     # end heroku
