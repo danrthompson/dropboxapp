@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130829172023) do
+ActiveRecord::Schema.define(:version => 20130906235040) do
 
   create_table "accounts", :force => true do |t|
     t.integer  "user_id"
@@ -19,6 +19,22 @@ ActiveRecord::Schema.define(:version => 20130829172023) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0, :null => false
+    t.integer  "attempts",   :default => 0, :null => false
+    t.text     "handler",                   :null => false
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "file_sections", :force => true do |t|
     t.integer  "page_id"
@@ -35,8 +51,13 @@ ActiveRecord::Schema.define(:version => 20130829172023) do
     t.string   "title"
     t.string   "subtitle"
     t.text     "description"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+    t.string   "main_image_file_name"
+    t.string   "main_image_content_type"
+    t.integer  "main_image_file_size"
+    t.datetime "main_image_updated_at"
+    t.boolean  "main_image_processing"
   end
 
   add_index "pages", ["url"], :name => "index_pages_on_url", :unique => true

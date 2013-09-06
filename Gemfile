@@ -19,6 +19,8 @@ gem 'cancan', '1.6.8'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'figaro'
+gem 'delayed_job_active_record'
+gem 'delayed_paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
